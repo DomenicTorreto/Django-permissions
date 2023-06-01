@@ -14,7 +14,6 @@ class UserSerializer(serializers.ModelSerializer):
 
 
 class AdvertisementSerializer(serializers.ModelSerializer):
-    """Serializer для объявления."""
 
     creator = UserSerializer(
         read_only=True,
